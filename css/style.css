@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css?family=Inconsolata|TangerineBree+Serif');
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 1.25rem;
+}
+
+body {
+  background: #efefef;
+  color: #333;
+  text-align: center;
+  font-family: 'Inconsolata', "Courier New", "Courier", monospace;
+}
+
+a {
+  color: #000;
+}
+a:hover,
+a:focus {
+  background: #333;
+  color: #fff;
+}
+a.active {
+  color: #666;
+  text-decoration: none;
+}
+a.active:hover {
+  color: #666;
+  background: transparent;
+}
+sup a {
+  text-decoration: none;
+}
+a.logo:hover,
+a.logo:focus {
+  background:transparent;
+}
+
+.info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.info * {
+  max-width: 40rem;
+}
+.info ul {
+  text-align: left;
+  margin-left: 20%;
+}
+.info ul ul {
+  margin-left: 2rem;
+}
+
+h1 {
+  width: 100%;
+  flex-basis: 100%;
+  font-size: 1.75rem;
+}
+
+.tagline {
+  width: 100%;
+  flex-basis: 100%;
+}
+
+.logo {
+  max-width: 80%;
+}
+
+hr.icon {
+  box-sizing: content-box;
+  height: 0;
+  margin: 1rem auto;
+  padding: 0 30vw;
+  border: 0;
+  border-top: 3px solid #333;
+  text-align: center;
+  overflow: visible;
+}
+hr.icon:after {
+  /* f046 checked box, f0e7 lightning, f0f5 cutlery */
+  /* see https://fontawesome.com/v4.7/cheatsheet/ */
+  /* https: //fontawesome.com/search */
+  display: inline-block;
+  position: relative;
+  top: -1.7rem;
+  padding: 0 1rem;
+  font-family: FontAwesome;
+  font-size: 3rem;
+  background-color: #efefef;
+}
+hr.lightning:after {
+  content: "\f0e7";
+}
+hr.checkbox:after {
+  content: "\f046";
+}
+hr.xmas:after {
+  content: "\f2dc";
+}
+hr.info:after {
+  content: "\f05a";
+}
+hr.beer:after {
+  content: "\f0fc";
+}
+hr.drinks:after {
+  content: "\f79f";
+}
+hr.menu:after {
+  content: "\f03a";
+}
+
+header {
+  margin-bottom: 1.5rem;
+}
+nav {
+  display: flex;
+  flex-basis: 100%;
+  justify-content: center;
+  align-items: center;
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+nav ul li {
+  display: inline-block;
+  width: 40vw;
+  margin: 0;
+  padding: 0;
+  flex: 50%;
+  justify-content: space-between;
+  line-height: 1.5;
+}
+nav ul li:nth-child(odd) {
+  margin-right: 2rem;
+  text-align: right;
+}
+nav ul li:nth-child(odd):last-child {
+  margin-right: 0;
+  text-align: center;
+}
+nav ul li:nth-child(even) {
+  margin-left: 2rem;
+  text-align: left;
+}
+nav ul li a.active:before {
+  content: "\21D2\2002";
+}
+nav ul li a.active:after {
+  content: "\2002\21D0";
+}
+
+.drink {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#zeitgeistText {
+  display: inline-block;
+  padding: 2rem 1.5rem 1rem;
+  font-family: 'Bree Serif', serif;
+  font-weight: bold;
+  font-size: 3.5rem;
+  color: #333;
+  text-shadow: 0.5rem 0.5rem 0.5rem rgba(255,255,255,0.5);
+  max-width: 80%;
+  background: antiquewhite url("/images/logo.png") no-repeat calc(100% - 1.5rem) calc(100% - 1.5rem);
+  background-size: auto 3rem;
+  /* background-blend-mode: overlay; */
+  box-shadow: 0.25rem 0.25rem 0.5rem rgba(51, 51, 51, 0.5);
+  position: relative;
+  top: 1rem;
+  margin-bottom: 2rem;
+}
+
+span.hops{
+  font-size: 2.5rem;
+  display: block;
+  margin-top: 0.5rem;
+  padding: 1rem 1.5rem;
+}
+
+#menuText {
+  max-width: 40rem;
+  padding: 1rem 2rem 5rem;
+  background: antiquewhite url("/images/logo-with-text.png") no-repeat center calc(100% - 1.5rem);
+  background-size: auto 3rem;
+  background-blend-mode: overlay;
+  box-shadow: 0.25rem 0.25rem 0.5rem rgba(51, 51, 51, 0.5);
+}
+
+#menuText li {
+  list-style-type: none;
+  padding: 1rem 0;
+  font-family: 'Bree Serif', serif;
+  font-weight: bold;
+  font-size: 2.5rem;
+  color: #333;
+  text-shadow: 0.25rem 0.25rem 0.25rem rgba(255, 255, 255, 0.5);
+}
+
+button,
+.button {
+  font-size: 1.25rem;
+  font-family: inherit;
+  border-radius: 1.5rem;
+  padding: 0.5rem 2rem;
+  cursor: pointer;
+  background: #000;
+  color: #fff;
+  margin: 0 1rem 2rem;
+  position: relative;
+  border: 3px solid #000;
+  text-decoration: none;
+}
+button:before,
+.button:before {
+  content: " ";
+  position: absolute;
+  border-radius: 2rem;
+  padding: 0.5rem 2rem;
+  z-index: -1;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  border: 3px solid #000;
+  background: #fff;
+}
+button:hover,
+.buton:hover {
+  color: #333;
+  background: #fff;
+}
+
+#bingoCard {
+  width: 80vw;
+  margin: 1rem 10%;
+  display: grid;
+  grid-gap: 0;
+  grid-template-columns: repeat(5, 16vw);
+  grid-template-rows: repeat(5, 16vw);
+  grid-auto-flow: column;
+}
+
+#bingoCard div {
+  border: 3px solid #333;
+  height: 16vw;
+  display: flex;
+  cursor: pointer;
+}
+
+#bingoCard div span {
+  margin: auto;
+}
+#bingoCard div.joker {
+  font-size: 5rem;
+  background: radial-gradient(circle 8vw, red, orange 80%, rgb(255,255,255,0));
+}
+
+
+#bingoCard .checked,
+#bingoCard .joker.checked {
+  background: radial-gradient(circle 8vw, blue, #1e90ff 80%, rgb(255,255,255,0));
+  color: #fff;
+}
+
+#fanfare {
+  position: fixed;
+  top: 10vw;
+  left: 25vw;
+  width: 50vw;
+  height: 25vw;
+  font-size: 5vw;
+  background: #1e90ff;
+  color: #fff;
+  animation: wobble 250ms ease 6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid #fff;
+  cursor: pointer;
+  text-shadow: 0.25rem 0.25rem 0.25rem rgba(0,0,0,0.25);
+  box-shadow: 2rem 2rem 2rem rgba(0,0,0,0.5);
+}
+#fanfare:hover {
+  animation: none;
+}
+#fanfare span.advisory:after{
+  content: "Tap to dismiss";
+  font-size: 1rem;
+  position: absolute;
+  bottom: 2rem;
+  right: 1rem;
+}
+#fanfare #countdown {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 2rem;
+}
+
+@keyframes wobble {
+  33% {
+    transform: rotate(10deg);
+  }
+  66% {
+    transform: rotate(-10deg);
+  }
+}
+
+footer {
+  font-size: 1rem;
+  padding: 1rem 10vw;
+  margin: 0 0 2rem;
+}
+
+.github-corner:hover .octo-arm {
+  animation: octocat-wave 560ms ease-in-out
+}
+
+@keyframes octocat-wave {
+
+  0%,
+  100% {
+    transform: rotate(0)
+  }
+
+  20%,
+  60% {
+    transform: rotate(-25deg)
+  }
+
+  40%,
+  80% {
+    transform: rotate(10deg)
+  }
+}
+
+@media (max-width:500px) {
+  .github-corner:hover .octo-arm {
+    animation: none
+  }
+
+  .github-corner .octo-arm {
+    animation: octocat-wave 560ms ease-in-out
+  }
+}
+
+@media print {}
