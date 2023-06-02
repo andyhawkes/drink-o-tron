@@ -84,16 +84,18 @@ function outputMenuIdea(newItem) {
     let modifier = drinkComponents.modifiers.value//.toLowerCase();
     let ingredient = drinkComponents.ingredients.value.toLowerCase();
     let product = drinkComponents.products.value.toLowerCase();
-    let hops = `<span class="hops">${drinkComponents.hops.value}</span>`;
+    let hops = ` <span class="hops">${drinkComponents.hops.value}</span>`;
 
-    zeitgeistRecipe = method + " " + modifier + " " + ingredient + " " + product + hops;
+    let zeitgeistRecipeCompact = `${method} ${modifier} ${ingredient} ${product}`
+    zeitgeistRecipe = zeitgeistRecipeCompact + hops;
     zeitgeistRecipe = capitalizeFirstLetter(zeitgeistRecipe.trim());
+    zeitgeistRecipeCompact = capitalizeFirstLetter(zeitgeistRecipeCompact.trim());
     
     let textElement = document.getElementById('zeitgeistText');
     textElement.innerHTML = zeitgeistRecipe;
 
-    updatePageTitle(zeitgeistRecipe);
-    updateTwitterLink(twitterMessageText[dataset], zeitgeistRecipe);
+    updatePageTitle(zeitgeistRecipeCompact);
+    updateTwitterLink(twitterMessageText[dataset], zeitgeistRecipeCompact);
 }
 
 function updateIndicesFromQSParams(){
