@@ -1,6 +1,7 @@
 const appNames = {
     "default": "DRINK-O-TRON",
-    "xmas": "Xmas beverage bot | DRINK-O-TRON"
+    "beer": "Craft Beer Generator | DRINK-O-TRON",
+    "xmas": "Xmas beverage bot | DRINK-O-TRON",
 }
 
 const twitterBaseURL = "https://twitter.com/intent/tweet?text=";
