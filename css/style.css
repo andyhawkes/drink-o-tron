@@ -59,7 +59,11 @@ h1 {
   flex-basis: 100%;
   font-size: 1.75rem;
 }
-
+h2 {
+  width: 100%;
+  flex-basis: 100%;
+  font-size: 1.5rem;
+}
 .tagline {
   width: 100%;
   flex-basis: 100%;
