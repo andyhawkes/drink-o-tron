@@ -30,7 +30,7 @@ function parseMultipleItems(component, index){
     }
 
     let rawText = "";
-    switch (index.length){
+    switch (componentNames.length){
         case 0:
             rawText = '';
             break;
