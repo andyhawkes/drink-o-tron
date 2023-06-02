@@ -33,8 +33,13 @@ function parseMultipleItems(component, index){
         case 0:
             rawText = '';
             break;
+        case 1:
+            rawText = componentNames[0];
+            break;
         default:
-            rawText = `${capitalizeFirstLetter(component)}: ${componentNames.join(', ')}`;
+            // rawText = `${capitalizeFirstLetter(component)}: ${componentNames.join(', ')}`;
+            rawText = componentNames.slice(0, componentNames.length - 1).join(', '); 
+            rawText += ' &amp; ' + componentNames[componentNames.length - 1];
     }
 
     drinkComponents[component] = {
