@@ -7,10 +7,10 @@ let indices = {
 }
 let drinkComponents = {}
 let zeitgeistRecipe = "Lager and lime"
-let maxHops = (includeHops == true) ? 5 : 0;
+let maxHops = (includeHops === true) ? 5 : 0;
 let maxIngredients = 3;
 
-const combinations = countUnique(textComponents.methods[dataset]) * countUnique(textComponents.modifiers[dataset]) * (maxIngredients * countUnique(textComponents.ingredients[dataset])) * countUnique(textComponents.products[dataset]) * (maxHops * countUnique(textComponents.hops[dataset]));
+const combinations = countUnique(textComponents.methods[dataset]) * countUnique(textComponents.modifiers[dataset]) * (maxIngredients * countUnique(textComponents.ingredients[dataset])) * countUnique(textComponents.products[dataset]) * ((maxHops > 0) ? maxHops * countUnique(textComponents.hops[dataset]) : 1);
 
 function getRandomRecipeComponents(component, count = 1) {
     let randomComponents = [];
@@ -97,7 +97,7 @@ function outputMenuIdea(newItem) {
     let modifier = drinkComponents.modifiers.value//.toLowerCase();
     let ingredient = drinkComponents.ingredients.value.toLowerCase();
     let product = drinkComponents.products.value//.toLowerCase();
-    let hops = (includeHops == true) ? ` <span class="hops">Hops: ${drinkComponents.hops.value}</span>` : '';
+    let hops = (includeHops === true) ? ` <span class="hops">Hops: ${drinkComponents.hops.value}</span>` : '';
 
     let zeitgeistRecipeCompact = `${method} ${modifier} ${ingredient} ${product}`
     zeitgeistRecipe = zeitgeistRecipeCompact + hops;
