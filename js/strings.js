@@ -4,6 +4,7 @@ let textComponents = {
     "methods": {
         "default": [
             "",
+            "",
             "Small batch",
             "Smoked",
             // Add new items at the end to prevent links breaking
@@ -15,7 +16,7 @@ let textComponents = {
             "Freeze-distilled",
             "Small batch",
             "Smoked",
-            "Wild Fermented",
+            "Wild fermented",
             // Add new items at the end to prevent links breaking
         ],
     },
@@ -41,6 +42,7 @@ let textComponents = {
             "locally sourced",
             "low carb",
             "organic",
+            "own-brand",
             "sustainable",
             "trappist",
             "vegan",
@@ -61,6 +63,7 @@ let textComponents = {
             "gluten-free",
             "low carb",
             "organic",
+            "own-brand",
             "sustainable",
             "trappist",
             "vegan",
@@ -385,6 +388,7 @@ let textComponents = {
         ]
     },
     "hops": {
+        "default": [],
         "beer": [
             // START hops taken from https://www.hopslist.com/hops/
             //Bittering Hops
