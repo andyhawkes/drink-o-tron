@@ -84,7 +84,7 @@ let textComponents = {
             "candied bacon",
             "chive flower",
             "chive",
-            "cider apple vinagar",
+            "cider apple vinegar",
             "clam",
             "coffee caramel",
             "corriander seed",
