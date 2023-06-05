@@ -18,7 +18,9 @@ function getRandomRecipeComponents(component, count = 1) {
         let index = Math.floor((Math.random() * textComponents[component][datasets[dataset][component]].length))
         randomComponents[step] = index;
     }
-    return randomComponents;
+    //deduplicate in case we get multiples of the same index
+    let uniqueComponents = [...new Set(randomComponents)];
+    return uniqueComponents;
 }
 function parseMultipleItems(component, index){
     let componentNames = []
