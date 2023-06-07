@@ -97,12 +97,12 @@ function outputMenuIdea(newItem) {
 
     let method = drinkComponents.methods.value//.toLowerCase();
     let modifier = drinkComponents.modifiers.value//.toLowerCase();
-    let ingredient = drinkComponents.ingredients.value.toLowerCase();
+    let ingredient = drinkComponents.ingredients.value//.toLowerCase();
     let product = drinkComponents.products.value//.toLowerCase();
     let hops = (includeHops === true) ? ` <span class="hops">Hops: ${drinkComponents.hops.value}</span>` : '';
 
-    let zeitgeistRecipeCompact = `${method} ${modifier} ${ingredient} ${product}`
-    zeitgeistRecipe = zeitgeistRecipeCompact + hops;
+    let zeitgeistRecipeCompact = (dataset === "cocktails") ? `${modifier} ${ingredient} ${product}`: `${method} ${modifier} ${ingredient} ${product}`;
+    zeitgeistRecipe = zeitgeistRecipeCompact + ((dataset === "cocktails") ? `<span class="servingSuggestion">Serving suggestion: ${method}</span>` : hops);
     zeitgeistRecipe = capitalizeFirstLetter(zeitgeistRecipe.trim());
     zeitgeistRecipeCompact = capitalizeFirstLetter(zeitgeistRecipeCompact.trim());
     

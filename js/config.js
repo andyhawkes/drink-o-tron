@@ -1,6 +1,7 @@
 const appNames = {
     "default": "DRINK-O-TRON",
     "beer": "Craft Beer Generator | DRINK-O-TRON",
+    "cocktails": "Cocktail Generator | DRINK-O-TRON",
     "xmas": "Xmas beverage bot | DRINK-O-TRON",
 }
 
@@ -18,6 +19,7 @@ const datasets = {
         "modifiers": "default",
         "ingredients": "default",
         "products": "default",
+        "hops": "default",
     },
     "beer": {
         "methods": "beer",
@@ -26,4 +28,11 @@ const datasets = {
         "products": "beer",
         "hops": "beer",
     },
+    "cocktails": {
+        "methods": "cocktails",
+        "modifiers": "cocktails",
+        "ingredients": "cocktails",
+        "products": "cocktails",
+        "hops": "default",  
+    }
 }

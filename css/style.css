@@ -86,7 +86,7 @@ hr.icon {
 hr.icon:after {
   /* f046 checked box, f0e7 lightning, f0f5 cutlery */
   /* see https://fontawesome.com/v4.7/cheatsheet/ */
-  /* https: //fontawesome.com/search */
+  /* https://fontawesome.com/search */
   display: inline-block;
   position: relative;
   top: -1.7rem;
@@ -115,6 +115,9 @@ hr.drinks:after {
 }
 hr.menu:after {
   content: "\f03a";
+}
+hr.cocktail:after {
+  content: "\f561";
 }
 
 header {
@@ -183,11 +186,12 @@ nav ul li a.active:after {
   margin-bottom: 2rem;
 }
 
-span.hops{
+span.hops,
+span.servingSuggestion {
   font-size: 2.5rem;
   display: block;
   margin-top: 0.5rem;
-  padding: 1rem 2.5rem;
+  padding: 1rem 3rem;
 }
 
 #menuText {

@@ -17,7 +17,7 @@
     <meta name="twitter:creator" content="@andyhawkes" />
     <meta name="twitter:title" content="DRINK-O-TRON - the future of beverage innovation & inspiration" />
     <meta name="twitter:description"
-        content="Want the latest in on-trend drinks from the cultural zeitgeist but can't be arsed creating your own ideas? DRINK-O-TRON has millions of menu ideas for you!" />
+        content="Want a unique cocktail but can't be arsed coming up with your own ideas? DRINK-O-TRON has millions of amazing ideas for you!" />
     <meta name="twitter:image" content="http://drink-o-tron.andyhawkes.co.uk/images/logo.png" />
 
     <!-- OpenGraph metadata -->
@@ -25,7 +25,7 @@
     <meta property="og:url" content="http://drink-o-tron.andyhawkes.co.uk/" />
     <meta property="og:title" content="DRINK-O-TRON - the future of beverage innovation & inspiration" />
     <meta property="og:description"
-        content="Want the latest in on-trend drinks from the cultural zeitgeist but can't be arsed creating your own ideas? DRINK-O-TRON has millions of menu ideas for you!" />
+        content="Want a unique cocktail but can't be arsed coming up with your own ideas? DRINK-O-TRON has millions of amazing ideas for you!" />
     <meta property="og:image" content="http://drink-o-tron.andyhawkes.co.uk/images/logo.png" />
 
     <!-- Google tag (gtag.js) -->
@@ -38,8 +38,8 @@
     </script>
 
     <script>
-        let dataset = "beer";
-        let includeHops = true;
+        let dataset = "cocktails";
+        let includeHops = false;
     </script>
 </head>
 
@@ -51,40 +51,47 @@
         <nav>
             <ul>
                 <li><a href="/">Drink idea generator</a></li>
-                <li><a href="/beer" class="active">Craft beer generator</a></li>
-                <li><a href="/cocktails">Cocktail generator</a></li>
+                <li><a href="/beer">Craft beer generator</a></li>
+                <li><a href="/cocktails" class="active">Cocktail generator</a></li>
                 <li><a href="/about">About DRINK-O-TRON</a></li>
             </ul>
         </nav>
     </header>
 
-    <hr class="icon beer">
+    <hr class="icon cocktail">
 
     <div class="info">
-        <h1>Craft beer generator</h1>
+        <h1>Cocktail generator</h1>
         <p>
-            Want the latest in on-trend concepts from the craft beer zeitgeist but can't be arsed creating your own ideas?
+            Want a unique cocktail but can't be arsed creating your own ideas?
             <br>
-            No problem - DRINK-O-TRON has <span id="combinations">many</span> unique beer ideas for you!
+            No problem - DRINK-O-TRON has <span id="combinations">many</span> unique cocktail ideas for you!
         </p>
     </div>
 
     <div class="drink">
-        <p>Your new beer is: <br />
+        <p>Your new cocktail is: <br />
             <span id="zeitgeistText"></span>
         </p>
     </div>
 
     <button onClick="outputMenuIdea(true)">Give me more!</button>
-    <a href="https://twitter.com/intent/tweet?text=%40drink_o_tron%20is%20awesome" class="button tweetButton" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i> Tweet this</a>
+    <a href="https://twitter.com/intent/tweet?text=%40drink_o_tron%20is%20awesome" class="button tweetButton"
+        target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i> Tweet this</a>
 
-    <hr class="icon beer">
+    <hr class="icon cocktail">
 
-<footer>
-    <p>This site was quickly (and very roughly) cobbled together by <a href="https://twitter.com/andyhawkes" target="_blank">Andy Hawkes</a> because he's already done something similar for food in the form of <a href="https://chef-o-tron.andyhawkes.co.uk" target="_blank">CHEF-O-TRON</a> and it seemed like a good idea to expand it into the drinks world.</p>
-    <p><a href="https://twitter.com/intent/tweet?text=%40drink_o_tron%20is%20awesome%2C%20but%20I%20think%20it%20needs%20to%20feature%20more%20%5BINSERT%20INGREDIENT%20HERE%5D%20%23drinkotron" target="_blank">Tweet your drink suggestions</a> to <a href="https://twitter.com/drink_o_tron" target="_blank">@drink_o_tron</a></p>
-    <p>Fellow web geeks: <a href="https://github.com/andyhawkes/drink-o-tron/blob/main/js/strings.js" target="_blank">suggest new deliciousness here</a></p>
-</footer>
+    <footer>
+        <p>This site was quickly (and very roughly) cobbled together by <a href="https://twitter.com/andyhawkes"
+                target="_blank">Andy Hawkes</a> because he's already done something similar for food in the form of <a
+                href="https://chef-o-tron.andyhawkes.co.uk" target="_blank">CHEF-O-TRON</a> and it seemed like a good
+            idea to expand it into the drinks world.</p>
+        <p><a href="https://twitter.com/intent/tweet?text=%40drink_o_tron%20is%20awesome%2C%20but%20I%20think%20it%20needs%20to%20feature%20more%20%5BINSERT%20INGREDIENT%20HERE%5D%20%23drinkotron"
+                target="_blank">Tweet your drink suggestions</a> to <a href="https://twitter.com/drink_o_tron"
+                target="_blank">@drink_o_tron</a></p>
+        <p>Fellow web geeks: <a href="https://github.com/andyhawkes/drink-o-tron/blob/main/js/strings.js"
+                target="_blank">suggest new deliciousness here</a></p>
+    </footer>
 
     <a href="https://github.com/andyhawkes/drink-o-tron" class="github-corner" aria-label="View source on GitHub"
         target="_blank">
