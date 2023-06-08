@@ -60,6 +60,8 @@ let textComponents = {
             "with a twist of lime zest",
             "with a twist of orange zest",
             "with a wedge of lime",
+            // Add new items at the end to prevent links breaking
+            "garnished with a stick of celery",
         ]
     },
     "modifiers":{
@@ -128,6 +130,7 @@ let textComponents = {
             "Smoked",
             "Spiced",
             "Warm",
+            // Add new items at the end to prevent links breaking
         ]
     },
     "ingredients": {
@@ -655,6 +658,7 @@ let textComponents = {
             "whiskey sour",
             "with ginger ale",
             "with orange juice",
+            // Add new items at the end to prevent links breaking
         ]
     },
     "hops": {
