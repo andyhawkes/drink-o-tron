@@ -37,21 +37,40 @@ a.logo:focus {
   background:transparent;
 }
 
+.blogpost,
 .info {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
+  display: block;
+  margin: 2rem auto;
 }
+.blogpost *,
 .info * {
   max-width: 40rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 .info ul {
   text-align: left;
-  margin-left: 20%;
 }
 .info ul ul {
   margin-left: 2rem;
+}
+.blogpost .postlist{
+  list-style-type: none;
+  padding: 0;
+}
+.blogpost kbd {
+  display: inline-block;
+  color: #ccc;
+  background: #333;
+  margin: 1rem;
+  padding: 1rem;
+}
+.blogpost samp {
+  display: inline-block;
+  color: #0c0;
+  background: #333;
+  margin: 1rem;
+  padding: 1rem;
 }
 
 h1 {
@@ -119,9 +138,12 @@ hr.menu:after {
 hr.cocktail:after {
   content: "\f561";
 }
+hr.blog:after{
+  content: "\f303";
+}
 
 header {
-  margin-bottom: 1.5rem;
+  margin-bottom: 2.5rem;
 }
 nav {
   display: flex;
